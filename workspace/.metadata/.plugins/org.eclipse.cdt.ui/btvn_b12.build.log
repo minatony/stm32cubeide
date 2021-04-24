@@ -1,0 +1,10 @@
+20:38:50 **** Incremental Build of configuration Debug for project btvn_b12 ****
+make -j8 all 
+arm-none-eabi-size   btvn_b12.elf 
+   text	   data	    bss	    dec	    hex	filename
+  19684	     20	   1732	  21436	   53bc	btvn_b12.elf
+Finished building: default.size.stdout
+ 
+
+20:38:50 Build Finished. 0 errors, 0 warnings. (took 547ms)
+

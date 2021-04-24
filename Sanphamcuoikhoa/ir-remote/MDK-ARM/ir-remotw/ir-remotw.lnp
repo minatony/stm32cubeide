@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"ir-remotw\startup_stm32f103xb.o"
+"ir-remotw\dwt_stm32_delay.o"
+"ir-remotw\main.o"
+"ir-remotw\stm32f1xx_it.o"
+"ir-remotw\stm32f1xx_hal_msp.o"
+"ir-remotw\i2c-lcd.o"
+"ir-remotw\stm32f1xx_hal_gpio_ex.o"
+"ir-remotw\stm32f1xx_hal_i2c.o"
+"ir-remotw\stm32f1xx_hal_tim.o"
+"ir-remotw\stm32f1xx_hal_tim_ex.o"
+"ir-remotw\stm32f1xx_hal.o"
+"ir-remotw\stm32f1xx_hal_rcc.o"
+"ir-remotw\stm32f1xx_hal_rcc_ex.o"
+"ir-remotw\stm32f1xx_hal_gpio.o"
+"ir-remotw\stm32f1xx_hal_dma.o"
+"ir-remotw\stm32f1xx_hal_cortex.o"
+"ir-remotw\stm32f1xx_hal_pwr.o"
+"ir-remotw\stm32f1xx_hal_flash.o"
+"ir-remotw\stm32f1xx_hal_flash_ex.o"
+"ir-remotw\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "ir-remotw\ir-remotw.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ir-remotw.map" -o ir-remotw\ir-remotw.axf

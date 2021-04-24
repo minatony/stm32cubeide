@@ -1,0 +1,40 @@
+19:52:04 **** Incremental Build of configuration Debug for project btvn1_b7 ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32F303xE -DDEBUG -c -I../Core/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc -I../Drivers/STM32F3xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F3xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:101:5: warning: implicit declaration of function 'sprintf' [-Wimplicit-function-declaration]
+     sprintf(mang,"%03d",i);
+     ^~~~~~~
+../Core/Src/main.c:101:5: warning: incompatible implicit declaration of built-in function 'sprintf'
+../Core/Src/main.c:101:5: note: include '<stdio.h>' or provide a declaration of 'sprintf'
+../Core/Src/main.c:101:13: warning: passing argument 1 of 'sprintf' from incompatible pointer type [-Wincompatible-pointer-types]
+     sprintf(mang,"%03d",i);
+             ^~~~
+../Core/Src/main.c:101:13: note: expected 'char *' but argument is of type 'uint16_t * {aka short unsigned int *}'
+../Core/Src/main.c:102:31: warning: passing argument 2 of 'HAL_UART_Transmit' from incompatible pointer type [-Wincompatible-pointer-types]
+     HAL_UART_Transmit(&huart2,mang,3,100);
+                               ^~~~
+In file included from ../Core/Inc/stm32f3xx_hal_conf.h:326:0,
+                 from ../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal.h:30,
+                 from ../Core/Inc/main.h:31,
+                 from ../Core/Src/main.c:21:
+../Drivers/STM32F3xx_HAL_Driver/Inc/stm32f3xx_hal_uart.h:1462:19: note: expected 'uint8_t * {aka unsigned char *}' but argument is of type 'uint16_t * {aka short unsigned int *}'
+ HAL_StatusTypeDef HAL_UART_Transmit(UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout);
+                   ^~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "btvn1_b7.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\stm32\workspace\btvn1_b7\STM32F303RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="btvn1_b7.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: btvn1_b7.elf
+ 
+arm-none-eabi-objdump -h -S  btvn1_b7.elf  > "btvn1_b7.list"
+arm-none-eabi-objcopy  -O binary  btvn1_b7.elf  "btvn1_b7.bin"
+arm-none-eabi-size   btvn1_b7.elf 
+   text	   data	    bss	    dec	    hex	filename
+  13332	    120	   1720	  15172	   3b44	btvn1_b7.elf
+Finished building: default.size.stdout
+ 
+Finished building: btvn1_b7.bin
+ 
+Finished building: btvn1_b7.list
+ 
+
+19:52:05 Build Finished. 0 errors, 4 warnings. (took 868ms)
+

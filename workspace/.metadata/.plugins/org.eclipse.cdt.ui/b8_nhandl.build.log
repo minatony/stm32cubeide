@@ -1,0 +1,10 @@
+21:45:46 **** Incremental Build of configuration Debug for project b8_nhandl ****
+make -j8 all 
+arm-none-eabi-size   b8_nhandl.elf 
+   text	   data	    bss	    dec	    hex	filename
+  11244	     20	   1708	  12972	   32ac	b8_nhandl.elf
+Finished building: default.size.stdout
+ 
+
+21:45:47 Build Finished. 0 errors, 0 warnings. (took 256ms)
+

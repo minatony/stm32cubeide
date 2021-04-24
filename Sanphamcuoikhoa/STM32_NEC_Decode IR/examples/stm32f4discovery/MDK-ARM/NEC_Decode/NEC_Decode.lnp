@@ -1,0 +1,28 @@
+--cpu=Cortex-M4.fp
+"nec_decode\startup_stm32f407xx.o"
+"nec_decode\main.o"
+"nec_decode\stm32f4xx_hal_msp.o"
+"nec_decode\stm32f4xx_it.o"
+"nec_decode\nec_decode.o"
+"nec_decode\system_stm32f4xx.o"
+"nec_decode\stm32f4xx_hal_flash_ramfunc.o"
+"nec_decode\stm32f4xx_hal_pwr.o"
+"nec_decode\stm32f4xx_hal_uart.o"
+"nec_decode\stm32f4xx_hal_tim_ex.o"
+"nec_decode\stm32f4xx_hal_tim.o"
+"nec_decode\stm32f4xx_hal_gpio.o"
+"nec_decode\stm32f4xx_hal_flash.o"
+"nec_decode\stm32f4xx_hal_dma.o"
+"nec_decode\stm32f4xx_hal_dma_ex.o"
+"nec_decode\stm32f4xx_hal.o"
+"nec_decode\stm32f4xx_hal_flash_ex.o"
+"nec_decode\stm32f4xx_hal_pwr_ex.o"
+"nec_decode\stm32f4xx_hal_cortex.o"
+"nec_decode\stm32f4xx_hal_rtc_ex.o"
+"nec_decode\stm32f4xx_hal_rcc_ex.o"
+"nec_decode\stm32f4xx_hal_rcc.o"
+"nec_decode\stm32f4xx_hal_rtc.o"
+--library_type=microlib --strict --scatter "NEC_Decode\NEC_Decode.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "NEC_Decode.map" -o NEC_Decode\NEC_Decode.axf

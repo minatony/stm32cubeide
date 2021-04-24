@@ -1,0 +1,7 @@
+23:00:08 **** Build of configuration Debug for project b7 uart transmit ****
+make -j8 all 
+arm-none-eabi-size   b7\ uart\ transmit.elf 
+   text	   data	    bss	    dec	    hex	filename
+  22508	    484	   1716	  24708	   6084	b7 uart transmit.elf
+Finished building: default.size.stdout
+ 

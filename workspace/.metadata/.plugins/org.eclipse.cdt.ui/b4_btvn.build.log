@@ -1,0 +1,10 @@
+21:27:49 **** Incremental Build of configuration Debug for project b4_btvn ****
+make -j8 all 
+arm-none-eabi-size   b4_btvn.elf 
+   text	   data	    bss	    dec	    hex	filename
+  10780	     20	   1700	  12500	   30d4	b4_btvn.elf
+Finished building: default.size.stdout
+ 
+
+21:27:50 Build Finished. 0 errors, 0 warnings. (took 531ms)
+

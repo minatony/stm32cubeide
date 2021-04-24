@@ -1,0 +1,7 @@
+main.c:63:6:HAL_TIM_IC_CaptureCallback	16	static
+main.c:88:6:receive_data	8	static
+main.c:99:5:main	8	static
+main.c:144:6:SystemClock_Config	160	static
+main.c:187:13:MX_TIM2_Init	40	static
+main.c:235:13:MX_GPIO_Init	16	static
+main.c:251:6:Error_Handler	4	static,ignoring_inline_asm

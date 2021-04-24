@@ -1,0 +1,10 @@
+22:10:52 **** Incremental Build of configuration Debug for project b5_ngat ****
+make -j8 all 
+arm-none-eabi-size   b5_ngat.elf 
+   text	   data	    bss	    dec	    hex	filename
+   7548	     20	   1572	   9140	   23b4	b5_ngat.elf
+Finished building: default.size.stdout
+ 
+
+22:10:52 Build Finished. 0 errors, 0 warnings. (took 207ms)
+
